@@ -7,7 +7,7 @@ import java.util.Scanner;
 
 Scanner input = new Scanner(System.in);
 
-	int number = 100;
+	int number = 10;
 
 
 	for (int i = 1; i <= number; ++i ){
