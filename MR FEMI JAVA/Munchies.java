@@ -22,22 +22,10 @@ public class  Munchies{
 			System.out.print(num + " ");
 			}
 			
-	   	 }
+	   	 }	
+	
 	}
-//3
-	/*public static string  displayAge(int ageYear){
-	
-	int months  = years * 12;
-	int days = years * 365;
-	int minute = days * 60;
-	int seconds = minute * 60;
-	
-		return  ageYear,month, days, minute, seconds;
-	
-	
-	
-	}*/
-//4
+
 	public static int  computeSumOfNumber(int number){
 		number = Math.abs(number);
 		int sum = 0;
@@ -48,5 +36,23 @@ public class  Munchies{
 			}
 		return sum;
 	}
+
+	public static boolean  isLeapYear(int year){
+	
+		boolean isLeapYear = true;
 		
+		if(year % 4== 0){
+			if(year % 100 == 0){
+				if(year % 400 == 0)
+					isLeapYear = true;
+					
+					else 
+					isLeapYear = false;
+			}
+			
+		}	
+		
+		return isLeapYear
+	}
+	
 }
