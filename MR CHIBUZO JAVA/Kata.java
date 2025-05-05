@@ -15,7 +15,6 @@ public class Kata{
 				 if(counter == 2){
 				 	return true;
 				}
-		return true;
 				else{
 					return false;
 					}
