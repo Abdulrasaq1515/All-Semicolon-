@@ -7,21 +7,22 @@ public class Kata{
 //2
 	public static boolean isPrimeNumber(int number){
 		
-		if(number <= 1){
-			return false;
-		}
 		int counter = 0;
 		for( int count = 1 ; count <= number; count++){
 				if(number % count == 0 ){
-					counter++;
-				}
-				 if(counter == 2){
-				}
-
+					++counter;}
 		}
+				 if(counter == 2){
+				 	return true;
+				}
 		return true;
+				else{
+					return false;
+					}
 	}
+	
 //3	
+
 	public static boolean isEven(int number){
 	
 	if(number % 2==0){
@@ -32,7 +33,9 @@ public class Kata{
 	  }
 	  return true;
 	}
+	
 //4	
+
 	public static int factorsOfNumber(int number){
 	int counter = 0;
 	for (int count = 1; count <= number; count++){
@@ -43,12 +46,14 @@ public class Kata{
 		return counter;
 	}
 //5	
-	public static int subtract(int number1, int number2){
+
+	 public static int subtract(int number1, int number2){
 	int positiveDifference = 	Math.abs(number1-number2);
 		return positiveDifference;
 	}
 //6	
-	public static long factorialOfNumber(long number){
+
+	 public static long factorialOfNumber(long number){
 		int count = 1;
 		int factorial = 1;
 	while(count <= number){
@@ -58,6 +63,7 @@ public class Kata{
 	return factorial;
 	}
 //7
+
 	public static boolean isPalindrome(int number){
 	int sum = 0;
 	int reversed = 0;
@@ -73,18 +79,22 @@ public class Kata{
 		return true;
 	}
 //8
-	public static long squareOf(int number){
+
+	 public static long squareOf(int number){
 	int squareNumber = number * number;
 		return squareNumber;
 	}
 //9
+
 	public static boolean isSquare(int number){
 	
 	double squareOf = Math.sqrt(number);
 	
 	if(number == squareOf){	
-	}
-	return true;
+		return true;
+		}
+	else{
+		return false;}	
 	
 	}
-}
+	}
